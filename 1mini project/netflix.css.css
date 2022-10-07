@@ -1,0 +1,374 @@
+:root {
+    --primary-color: #e50914;
+    --dark-color: #141414;
+    --light-color: #f4f4f4;
+}
+
+* {
+    margin: 0;
+    ;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000000;
+    color: #999999;
+}
+
+
+
+.showcase-top{
+    position: relative;
+    z-index: 2;
+    height: 90px;
+}
+.showcase-top img {
+    position: absolute;
+
+    width: 140px;
+    top: 60%;
+    left: 0;
+    transform: translate(40%,-50%);
+}
+.showcase-top select{
+
+    position: absolute;
+    top: 50%;
+    height: 35px;
+    width: 100px;
+    background: transparent;
+    color: white;
+    font-size: 19px;
+    right: 150px;
+    transform: translate(-60%,-50%);
+   
+}
+.showcase-top a{
+     position: absolute;
+     top: 50%;
+     right: 0;
+     transform: translate(-60%,-50%);
+}
+
+.showcase {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: url(images/netflix_background.jpg) no-repeat center center/cover;
+}
+.showcase::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0,0,0,0.4);
+    box-shadow: 120px 100px 250px #000000 ,inset-120px -100px 250px #000000;
+}
+.showcase-content{
+    position: relative;
+    margin: 0 26%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 9rem;
+}
+.showcase-content h1{
+    font-weight: 700;
+    font-size: 64px;
+    margin:0 30px;
+    max-width: 800px;
+    line-height: 74px;
+}
+.showcase-content h3{
+    color: #f4f4f4;
+    font-size: 25px;
+    margin: 16px 0;
+}
+.showcase-content p{
+    font-size: 19px;
+    font-weight: 300;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+.showcase-content input{
+    position: absolute;
+    width: 454px;
+    bottom: -8vh;
+    height: 3rem;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    left:0;
+}
+ .btn{
+    display: inline-block;
+    background:var(--primary-color);
+    color: white;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    outline: none;
+    box-shadow: 0 5px 3px rgba(0,0,0,0.45 );
+    /* margin-top: 0.5rem; */
+}
+.btn:hover{
+    opacity: 0.9;
+}
+.btn-round{
+    border-radius: 5px;
+}
+.showcase-content .btn-lg{
+    position: absolute;
+    right: 0;
+    bottom: -8vh;
+    padding: 0.5rem 1.2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    height: 36px;
+    width: 14rem ;
+}
+h1,
+h2,
+h3 {
+    color: #f4f4f4;
+}
+
+h3 {
+    font-weight: lighter;
+}
+img{
+    width: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    margin: 0.5rem 0;
+    font-weight: bold;
+    color: #f4f4f4;
+}
+
+ .card-0,
+ .card-1,
+ .card-2,
+ .card-3{
+    border-top: 8px rgb(69,69,69 ) solid;
+ }
+ .card-0 {
+    width: 100%;
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 35%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+
+ }
+ .desc-0{
+    padding-left: 100px;
+ }
+ 
+ .card-1 {
+    width: 100%;
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 35% 50%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+
+ }
+ .desc-1{
+    padding-left: 100px;
+ }
+ .style-cards h1{
+    font-size: 3rem;
+ padding: 1rem;
+ padding-left: 0;
+ }
+ .style-cards h3{
+    font-size: 1.6rem;
+    line-height: 2rem;
+
+ }
+ .card-0 video{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    grid-column: 2/2;;
+    grid-row: 1/2;
+    z-index: -1;
+ }
+ .card-0 img{
+    grid-column: 2/2;
+    grid-row: 1/2;
+ }
+
+ .card-2 {
+    width: 100%;
+    position: relative;
+    display: inline-grid;
+    grid-template-columns:   40% 35%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+
+ }
+ .desc-2{
+    padding-left: 80px;
+    padding-right: 20px;
+ }
+ .card-2 video{
+    position: relative;
+    width: 65%;
+    height: 80%;
+    top: -87px;
+    left: 125px;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+ }
+ .card-2 img{
+    width: 110%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+ }
+.card-3{
+    width: 100%;
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 40% 50%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+desc-3{
+    position: relative;
+    padding: 100px;
+    padding-top:170px ;
+}
+.faq{ 
+    border-top: 8px rgb(69,69,69 ) solid;
+    text-align: center;
+
+}
+.faq h1{
+    padding-top: 70px;
+    font-size: 3rem;
+    padding-bottom: 40px;
+}
+.questions{ 
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+
+}
+.questions li{
+    padding: 20px 30px;
+    margin: 5px;
+    font-size: 1.6rem;
+    background-color: #303030;
+    color: white;
+    list-style: none;
+    text-align: left;
+    width: 50%;
+}
+.faq p{
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 25px;
+    font-size: 1.2rem;
+    font-weight: 200;
+    left: -50px;
+
+}
+.input{
+    display: inline-grid;
+    align-items: center;
+    grid-template-columns: 50% 40% ;
+    padding-bottom: 95px;
+}
+.input input{
+    width: 550px;
+    height: 3.9rem;
+
+}
+.input button{
+    height: 4.1rem;
+    width: 250px;
+    left: 20px;
+    text-align: center;
+    background-color: var(--primary-color);
+    font-size: 1.5rem;
+    /* padding: 15px 32px; */
+    border: none;
+    color: var(--light-color);
+    border-radius: 2px;
+}
+.line{
+   
+    width: 100%;
+    border-top: 8px #303030 solid;
+}
+.footer{
+    width: 100%;
+    padding-top: 70px;
+    
+    max-width: 70%;
+    margin: 1rem  auto;
+}
+.footer a{
+    color: #999999;
+    font-size: 0.9rem;
+}
+.footer p{
+    margin-bottom: 1.5rem;
+}
+.footer .footer-cols{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+.footer li{
+    list-style: none;
+    line-height: 2rem;
+}
+.language{ 
+    padding-top: 50px;
+   
+    width: 4rem;;
+}
+ 
+
+.language select{
+    width: 119px;
+    padding: 12px;
+    text-align: center;
+     
+    color: var(--light-color);
+    background: transparent;
+}
+.netflix-india{
+    padding-top: 2rem;
+    font-weight: 100;
+   
+
+}
+.netflix-india p{
+    font-size: 13px;
+    color: rgb(69,69,69 );
+}
